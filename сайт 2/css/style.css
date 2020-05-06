@@ -1,0 +1,267 @@
+/* Подключение шрифтов*/
+
+/* montserrat-regular - latin_cyrillic */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+         url('fonts/montserrat-v14-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('fonts/montserrat-v14-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-500 - latin_cyrillic */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Montserrat Medium'), local('Montserrat-Medium'),
+         url('../fonts/montserrat-v14-latin_cyrillic-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v14-latin_cyrillic-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-600 - latin_cyrillic */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'),
+         url('../fonts/montserrat-v14-latin_cyrillic-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v14-latin_cyrillic-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-700 - latin_cyrillic */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+         url('../fonts/montserrat-v14-latin_cyrillic-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v14-latin_cyrillic-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-800 - latin_cyrillic */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Montserrat ExtraBold'), local('Montserrat-ExtraBold'),
+         url('../fonts/montserrat-v14-latin_cyrillic-800.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v14-latin_cyrillic-800.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+/* Общие свойства */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', normal;
+    background-color: #E5E5E5;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.padding-site {
+    padding-left: 405px;
+    padding-right: 405px;
+}
+
+/* Свойства для header */
+header {
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.menu-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-link {
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+    line-height: 97px;
+    text-decoration: none;
+    padding: 0 20px;
+}
+
+.menu-list:last-child .menu-link{
+    padding-right: 0;
+}
+.menu-link-active {
+    border-bottom: 2px solid #ffffff;
+}
+
+.menu-link:hover,
+.menu-link:focus,
+.menu-link:active {
+    border-bottom: 2px solid #ffffff;
+}
+
+.line {
+    opacity: 0.5;
+    border: 1px solid #A1A1A1;
+}
+
+/* Свойства для intro */
+.intro {
+    background: url(../img/Rectangle.jpg) no-repeat center;
+    background-size: cover;
+    height: 90vh;
+    padding-top: 320px;
+}
+
+.intro-subtitle {
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.white-subtitle {
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.intro-title {
+    padding-bottom: 50px;
+    max-width: 830px;
+    margin: auto;
+}
+
+.white-title {
+    font-weight: 800;
+    font-size: 48px;
+    text-align: center;
+    color: #FFFFFF;
+    line-height: 64px;
+}
+
+.button {
+    width: 200px;
+    height: 45px;
+    background: #4985FF;
+    box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+    border-radius: 30px;
+    margin: auto;
+    text-align: center;
+}
+
+.link {
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+    line-height: 45px;
+    display: block;
+}
+
+
+/* Свойства для services */
+
+.services {
+    padding-bottom: 105px;
+    padding-top: 110px;
+    min-height: 50vh;
+}
+
+.services-title {
+    width: 740px;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.black-title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 53px;
+    text-align: center;
+    color: #323232;
+}
+
+.services-subtitle {
+    width: 730px;
+    margin: auto;
+    padding-bottom: 70px;
+}
+
+.black-subtitle {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    color: #999999;
+}
+
+.services-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.services-column {
+    width: 350px;
+    margin-bottom: 55px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.services-small-title {
+    width: 225px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+.small-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.services-small-subtitle {
+    width: 225px;
+}
+
+.small-subtitle {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #999999;
+    letter-spacing: 1px;
+}
+
+.services-icon-circle {
+    height: 110px;
+    width: 110px;
+    border: 1px solid #D0D0D0;
+    border-radius: 55px;
+}
+
+.services-icon-ellipse {
+    height: 90px;
+    width: 90px;
+    border: 1px solid #4985FF;
+    border-radius: 45px;
+    margin: 10px;
+    text-align: center;
+    padding: 25px;
+}
