@@ -59,7 +59,7 @@ html {
 
 body {
     font-family: 'Montserrat', normal;
-    background-color: #E5E5E5;
+    background-color: #f9f9f9;
 }
 
 .container {
@@ -95,7 +95,7 @@ header {
 .menu-link {
     font-weight: 500;
     font-size: 16px;
-    color: #FFFFFF;
+    color: #ffffff;
     line-height: 97px;
     text-decoration: none;
     padding: 0 20px;
@@ -123,7 +123,7 @@ header {
 .intro {
     background: url(../img/Rectangle.jpg) no-repeat center;
     background-size: cover;
-    height: 90vh;
+    height: 80vh;
     padding-top: 320px;
 }
 
@@ -156,7 +156,7 @@ header {
 .button {
     width: 200px;
     height: 45px;
-    background: #4985FF;
+    background: #4985ff;
     box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
     border-radius: 30px;
     margin: auto;
@@ -166,15 +166,13 @@ header {
 .link {
     font-weight: 500;
     font-size: 16px;
-    color: #FFFFFF;
+    color: #ffffff;
     text-decoration: none;
     line-height: 45px;
     display: block;
 }
 
-
 /* Свойства для services */
-
 .services {
     padding-bottom: 105px;
     padding-top: 110px;
@@ -185,13 +183,13 @@ header {
     width: 740px;
     margin: auto;
     padding-bottom: 50px;
+    text-align: center;
 }
 
 .black-title {
     font-weight: bold;
     font-size: 36px;
     line-height: 53px;
-    text-align: center;
     color: #323232;
 }
 
@@ -199,13 +197,13 @@ header {
     width: 730px;
     margin: auto;
     padding-bottom: 70px;
+    text-align: center;
 }
 
 .black-subtitle {
-    font-weight: normal;
+    font-weight: 500;
     font-size: 16px;
     line-height: 25px;
-    text-align: center;
     color: #999999;
 }
 
@@ -242,26 +240,69 @@ header {
 }
 
 .small-subtitle {
-    font-weight: normal;
+    font-weight: 500;
     font-size: 14px;
     line-height: 22px;
     color: #999999;
-    letter-spacing: 1px;
 }
 
 .services-icon-circle {
     height: 110px;
     width: 110px;
-    border: 1px solid #D0D0D0;
+    border: 1px solid #e0e0e0;
     border-radius: 55px;
 }
 
 .services-icon-ellipse {
     height: 90px;
     width: 90px;
-    border: 1px solid #4985FF;
+    border: 1px solid #4985ff;
     border-radius: 45px;
     margin: 10px;
     text-align: center;
     padding: 25px;
+}
+
+/* Свойства для aboutUs */
+.aboutUs {
+background: #f6f6f8;
+}
+
+.aboutUs-toprow {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom: 90px;
+}
+
+.aboutUs-standards {
+    width: 490px;
+}
+
+.aboutUs-title {
+    margin-bottom: 40px;
+}
+
+.aboutUs-subtitle {
+    margin-bottom: 30px;
+}
+
+.aboutUs-bottomrow {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.aboutUs-number {
+    display: inline;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 53px;
+    color: #000000;
+    padding-left: 20px;
 }
