@@ -145,12 +145,16 @@ header {
     margin: auto;
 }
 
-.white-title {
+.white-big-title {
     font-weight: 800;
     font-size: 48px;
     text-align: center;
     color: #FFFFFF;
     line-height: 64px;
+}
+
+.intro-button {
+    margin: auto;
 }
 
 .button {
@@ -159,8 +163,21 @@ header {
     background: #4985ff;
     box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
     border-radius: 30px;
-    margin: auto;
     text-align: center;
+}
+
+.button:hover {
+    background: #FFFFFF;
+    box-shadow: #4985ff 0 0 0 4px;
+}
+
+.button:hover > .link {
+    color: #FFFFFF;
+    color: #4985ff;
+}
+
+.button:active {
+    box-shadow: #4985ff 0 0 0 2px;
 }
 
 .link {
@@ -210,7 +227,7 @@ header {
 .services-row {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
 }
 
@@ -263,17 +280,22 @@ header {
     padding: 25px;
 }
 
+.services-button {
+    margin: auto;
+}
+
 /* Свойства для aboutUs */
 .aboutUs {
-background: #f6f6f8;
+    background: #f6f6f8;
+    padding-top: 100px;
+    padding-bottom: 70px;
 }
 
 .aboutUs-toprow {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
-    padding-top: 100px;
     padding-bottom: 90px;
 }
 
@@ -289,12 +311,18 @@ background: #f6f6f8;
     margin-bottom: 30px;
 }
 
+.aboutUs-photo {
+    border-radius: 30px;
+    width: 500px;
+    height: 400px;
+    background: url(../img/Rectangle\ 2.jpg) center;
+}
+
 .aboutUs-bottomrow {
     margin-top: 70px;
-    margin-bottom: 70px;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-around;
 }
 
@@ -305,4 +333,70 @@ background: #f6f6f8;
     line-height: 53px;
     color: #000000;
     padding-left: 20px;
+}
+
+/* Свойства для allServices */
+.allServices {
+    padding-bottom: 85px;
+    padding-top: 100px;
+    min-height: 50vh;
+    position: relative;
+}
+
+.allServices-color {
+    background: linear-gradient(90deg, #504DC2 20.44%, #5F12D0 80.91%), #C4C4C4;
+    height: 45%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+.allServices-toprow {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+.allServices-title {
+    width: 540px;
+}
+
+.white-title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 53px;
+    color: #FFFFFF;
+}
+
+.allServices-bottomrow {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-bottom: 85px;
+}
+
+
+.allServices-column {
+    width: 350px;
+}
+
+.allServices-photo {
+    border-radius: 10px;
+}
+
+.allServices-small-title {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.allServices-span {
+    color: #4985FF;
+}
+
+.allServices-subtitle {
+    margin-bottom: 30px;
 }
