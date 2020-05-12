@@ -6,48 +6,64 @@
     font-style: normal;
     font-weight: 400;
     src: local('Montserrat Regular'), local('Montserrat-Regular'),
-         url('fonts/montserrat-v14-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('fonts/montserrat-v14-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-  /* montserrat-500 - latin_cyrillic */
-  @font-face {
+        url('../fonts/montserrat-v14-latin_cyrillic-regular.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/montserrat-v14-latin_cyrillic-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-500 - latin_cyrillic */
+@font-face {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     src: local('Montserrat Medium'), local('Montserrat-Medium'),
-         url('../fonts/montserrat-v14-latin_cyrillic-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/montserrat-v14-latin_cyrillic-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-  /* montserrat-600 - latin_cyrillic */
-  @font-face {
+        url('../fonts/montserrat-v14-latin_cyrillic-500.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/montserrat-v14-latin_cyrillic-500.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-600 - latin_cyrillic */
+@font-face {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
     src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'),
-         url('../fonts/montserrat-v14-latin_cyrillic-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/montserrat-v14-latin_cyrillic-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-  /* montserrat-700 - latin_cyrillic */
-  @font-face {
+        url('../fonts/montserrat-v14-latin_cyrillic-600.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/montserrat-v14-latin_cyrillic-600.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-700 - latin_cyrillic */
+@font-face {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
     src: local('Montserrat Bold'), local('Montserrat-Bold'),
-         url('../fonts/montserrat-v14-latin_cyrillic-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/montserrat-v14-latin_cyrillic-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-  /* montserrat-800 - latin_cyrillic */
-  @font-face {
+        url('../fonts/montserrat-v14-latin_cyrillic-700.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/montserrat-v14-latin_cyrillic-700.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-800 - latin_cyrillic */
+@font-face {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 800;
     src: local('Montserrat ExtraBold'), local('Montserrat-ExtraBold'),
-         url('../fonts/montserrat-v14-latin_cyrillic-800.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/montserrat-v14-latin_cyrillic-800.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
+        url('../fonts/montserrat-v14-latin_cyrillic-800.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/montserrat-v14-latin_cyrillic-800.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 
 /* Общие свойства */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: inherit;
@@ -70,6 +86,87 @@ body {
     padding-left: 405px;
     padding-right: 405px;
 }
+
+.line {
+    opacity: 0.5;
+    border: 1px solid #A1A1A1;
+}
+
+.white-big-title {
+    font-weight: 800;
+    font-size: 48px;
+    text-align: center;
+    color: #FFFFFF;
+    line-height: 64px;
+}
+
+.white-subtitle {
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.button {
+    width: 200px;
+    height: 45px;
+    background: #4985ff;
+    box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+    border-radius: 30px;
+    text-align: center;
+}
+
+.button:hover {
+    background: #FFFFFF;
+    box-shadow: #4985ff 0 0 0 4px;
+}
+
+.button:active,
+.button:focus {
+    box-shadow: #4985ff 0 0 0 2px;
+}
+
+.button:hover>.link {
+    color: #FFFFFF;
+    color: #4985ff;
+}
+
+.link {
+    font-weight: 500;
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+    line-height: 45px;
+    display: block;
+}
+
+.black-title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 53px;
+    color: #323232;
+}
+
+.black-subtitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    color: #999999;
+}
+
+.small-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.small-subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #999999;
+}
+
 
 /* Свойства для header */
 header {
@@ -102,29 +199,21 @@ header {
     padding: 0 20px;
 }
 
-.menu-list:last-child .menu-link{
+.menu-list:last-child .menu-link {
     padding-right: 0;
 }
-.menu-link-active {
-    border-bottom: 2px solid #ffffff;
-}
 
-.menu-link:hover,
-.menu-link:focus,
-.menu-link:active {
+.menu-link:active,
+.menu-link:focus, 
+.menu-link:hover {
     border-bottom: 2px solid #ffffff;
-}
-
-.line {
-    opacity: 0.5;
-    border: 1px solid #A1A1A1;
 }
 
 /* Свойства для intro */
 .intro {
-    background: url(../img/Rectangle.jpg) no-repeat center;
+    background: url(../img/Background-intro.jpg) no-repeat center;
     background-size: cover;
-    height: 80vh;
+    min-height: 80vh;
     padding-top: 320px;
 }
 
@@ -134,60 +223,14 @@ header {
     text-align: center;
 }
 
-.white-subtitle {
-    font-weight: 500;
-    font-size: 16px;
-    color: #FFFFFF;
-}
-
 .intro-title {
     padding-bottom: 50px;
     max-width: 830px;
     margin: auto;
 }
 
-.white-big-title {
-    font-weight: 800;
-    font-size: 48px;
-    text-align: center;
-    color: #FFFFFF;
-    line-height: 64px;
-}
-
 .intro-button {
     margin: auto;
-}
-
-.button {
-    width: 200px;
-    height: 45px;
-    background: #4985ff;
-    box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
-    border-radius: 30px;
-    text-align: center;
-}
-
-.button:hover {
-    background: #FFFFFF;
-    box-shadow: #4985ff 0 0 0 4px;
-}
-
-.button:hover > .link {
-    color: #FFFFFF;
-    color: #4985ff;
-}
-
-.button:active {
-    box-shadow: #4985ff 0 0 0 2px;
-}
-
-.link {
-    font-weight: 500;
-    font-size: 16px;
-    color: #ffffff;
-    text-decoration: none;
-    line-height: 45px;
-    display: block;
 }
 
 /* Свойства для services */
@@ -204,25 +247,11 @@ header {
     text-align: center;
 }
 
-.black-title {
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 53px;
-    color: #323232;
-}
-
 .services-subtitle {
     width: 730px;
     margin: auto;
     padding-bottom: 70px;
     text-align: center;
-}
-
-.black-subtitle {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 25px;
-    color: #999999;
 }
 
 .services-row {
@@ -246,22 +275,8 @@ header {
     margin-top: 50px;
 }
 
-.small-title {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 22px;
-    color: #000000;
-}
-
 .services-small-subtitle {
     width: 225px;
-}
-
-.small-subtitle {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 22px;
-    color: #999999;
 }
 
 .services-icon-circle {
@@ -316,7 +331,7 @@ header {
     border-radius: 30px;
     width: 500px;
     height: 400px;
-    background: url(../img/Rectangle\ 2.jpg) center;
+    background: url(../img/aboutUs-photo.jpg) center;
 }
 
 .aboutUs-bottomrow {
@@ -353,6 +368,7 @@ header {
     width: 100%;
     z-index: -1;
 }
+
 .allServices-toprow {
     display: flex;
     flex-wrap: wrap;
@@ -380,13 +396,14 @@ header {
     padding-bottom: 85px;
 }
 
-
 .allServices-column {
     width: 350px;
 }
 
 .allServices-photo {
     border-radius: 10px;
+    width: 350px;
+    height: 300px;
 }
 
 .allServices-small-title {
@@ -432,6 +449,8 @@ header {
 .allProjects-photo {
     border-radius: 10px;
     margin-bottom: 50px;
+    width: 255px;
+    height: 255px;
 }
 
 .allProjects-button {
@@ -450,7 +469,7 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    background: url(../img/Rectang.jpg) no-repeat center;
+    background: url(../img/Background-subcribe.jpg) no-repeat center;
     background-size: cover;
     height: 55%;
     width: 100%;
@@ -470,7 +489,7 @@ header {
 .subcribe-video {
     width: 970px;
     height: 430px;
-    background: url(../img/Recta.jpg) no-repeat center;
+    background: url(../img/Subcribe-video.jpg) no-repeat center;
     border-radius: 10px;
     margin: auto;
     margin-bottom: 85px;
@@ -479,19 +498,33 @@ header {
     justify-content: center;
 }
 
-.subcribe-play {
+.subcribe-link {
+    display: inline-block;
+    background: url(../img/play-button.svg) no-repeat 13% center;
     border: 1px solid #FFFFFF;
     border-radius: 200px;
     width: 300px;
     height: 100px;
+    text-decoration: none;
+    line-height: 100px;
+    vertical-align: middle;
+    text-align: right;
+    padding-right: 30px;
+    transition: 0.7s all;
 }
 
-.subcribe-link {
-    line-height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    text-decoration: none;
+.subcribe-link:hover {
+    background: url(../img/play-button.svg) no-repeat center center;
+    color: transparent;
+    width: 100px;
+}
+
+.subcribe-link:active {
+    background: url(../img/play-button.svg) no-repeat center center;
+    color: transparent;
+    width: 100px;
+    background-size: 100%;
+    border: none;
 }
 
 .subcribe-small-title {
@@ -516,6 +549,9 @@ header {
     justify-content: center;
 }
 
+.subcribe-fieldset {
+    border: none;
+}
 .subcribe-email {
     border: 1px solid #F2F2F2;
     box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
@@ -548,6 +584,44 @@ header {
     color: #4985ff;
 }
 
-.subcribe-submit:active {
+.subcribe-submit:active,
+.subcribe-submit:focus {
     box-shadow: #4985ff 0 0 0 2px;
+}
+
+/* Свойства для footer */
+.footer {
+    padding-top: 70px;
+    padding-bottom: 30px;
+    min-height: 30vh;
+    background: #F6F6F8;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 70px;
+}
+
+.footer-column {
+    width: 242px;
+}
+
+.footer-small-subtitle {
+    display: block;
+    text-decoration: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-small-subtitle:hover {
+    text-decoration: underline;
+}
+
+.footer-rights {
+    margin-top: 30px;
+    text-align: center;
 }
