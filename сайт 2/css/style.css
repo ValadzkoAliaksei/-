@@ -107,7 +107,8 @@ body {
 }
 
 .button {
-    width: 200px;
+    max-width: 200px;
+    min-width: 200px;
     height: 45px;
     background: #4985ff;
     box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
@@ -167,6 +168,12 @@ body {
     color: #999999;
 }
 
+.white-title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 53px;
+    color: #FFFFFF;
+}
 
 /* Свойства для header */
 .header {
@@ -185,14 +192,12 @@ body {
 
 .menu {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: flex-end;
 }
 
 .menu-list {
     display: flex;
-    flex-wrap: wrap;
 }
 
 .menu-link {
@@ -229,8 +234,8 @@ body {
 }
 
 .intro-title {
-    padding-bottom: 50px;
-    max-width: 830px;
+    width: 100%;
+    padding: 0 140px 50px 140px;
     margin: auto;
 }
 
@@ -246,15 +251,14 @@ body {
 }
 
 .services-title {
-    width: 740px;
-    margin: auto;
-    padding-bottom: 50px;
+    width: 100%;
+    padding: 0 170px 50px 170px;
     text-align: center;
 }
 
 .services-subtitle {
-    width: 730px;
-    margin: auto;
+    width: 100%;
+    padding: 0 180px;
     padding-bottom: 70px;
     text-align: center;
 }
@@ -267,7 +271,8 @@ body {
 }
 
 .services-column {
-    width: 350px;
+    max-width: 350px;
+    min-width: 340px;
     margin-bottom: 55px;
     display: flex;
     flex-wrap: wrap;
@@ -306,13 +311,13 @@ body {
 }
 
 /* Свойства для aboutUs */
-.aboutUs {
+.about {
     background: #f6f6f8;
     padding-top: 100px;
-    padding-bottom: 70px;
+    padding-bottom: 60px;
 }
 
-.aboutUs-toprow {
+.about-top-row {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -320,26 +325,28 @@ body {
     padding-bottom: 90px;
 }
 
-.aboutUs-standards {
+.about-standards {
     width: 490px;
+    padding-bottom: 20px;
 }
 
-.aboutUs-title {
+.about-title {
     margin-bottom: 40px;
 }
 
-.aboutUs-subtitle {
+.about-subtitle {
     margin-bottom: 30px;
 }
 
-.aboutUs-photo {
+.about-photo {
     border-radius: 30px;
     width: 500px;
     height: 400px;
     background: url(../img/aboutUs-photo.jpg) center;
+    min-width: 250px;
 }
 
-.aboutUs-bottomrow {
+.about-bottom-row {
     margin-top: 70px;
     display: flex;
     flex-wrap: wrap;
@@ -347,7 +354,7 @@ body {
     justify-content: space-around;
 }
 
-.aboutUs-number {
+.about-number {
     display: inline;
     font-weight: 500;
     font-size: 36px;
@@ -356,15 +363,20 @@ body {
     padding-left: 20px;
 }
 
-/* Свойства для allServices */
-.allServices {
+.about-column {
+    padding-bottom: 10px;
+    min-width: 110px;
+}
+
+/* Свойства для all */
+.all {
     padding-bottom: 85px;
     padding-top: 100px;
     min-height: 50vh;
     position: relative;
 }
 
-.allServices-color {
+.all-color {
     background: linear-gradient(90deg, #504DC2 20.44%, #5F12D0 80.91%), #C4C4C4;
     height: 45%;
     position: absolute;
@@ -374,7 +386,7 @@ body {
     z-index: -1;
 }
 
-.allServices-toprow {
+.all-top-row {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -382,61 +394,55 @@ body {
     margin-bottom: 70px;
 }
 
-.allServices-title {
+.all-title {
     width: 540px;
 }
 
-.white-title {
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 53px;
-    color: #FFFFFF;
-}
-
-.allServices-bottomrow {
+.all-bottom-row {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-between;
-    padding-bottom: 85px;
+    padding-bottom: 65px;
 }
 
-.allServices-column {
+.all-column {
     width: 350px;
+    padding-bottom: 20px;
 }
 
-.allServices-photo {
+.all-photo {
     border-radius: 10px;
     width: 350px;
     height: 300px;
 }
 
-.allServices-small-title {
+.all-small-title {
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
-.allServices-span {
+.all-span {
     color: #4985FF;
 }
 
-.allServices-subtitle {
+.all-subtitle {
     margin-bottom: 30px;
 }
 
-/* Свойства для allProjects */
-.allProjects {
+/* Свойства для projects */
+.projects {
     padding-top: 100px;
     padding-bottom: 130px;
     min-height: 50vh;
     background: #F6F6F8;
 }
 
-.allProjects-title {
+.projects-title {
     text-align: center;
 }
 
-.allProjects-subtitle {
+.projects-subtitle {
     width: 730px;
     margin: auto;
     text-align: center;
@@ -444,30 +450,31 @@ body {
     padding-bottom: 70px;
 }
 
-.allProjects-row {
+.projects-row {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-between;
-    margin-bottom: 50px;
 }
 
-.allProjects-column {
-    width: 255px;
+.projects-column {
+    max-width: 255px;
+    min-width: 200px;
     height: 255px;
     overflow: hidden;
     border-radius: 10px;
+    margin-bottom: 50px;
 }
 
-.allProjects-column:hover .allProjects-photo{
+.projects-column:hover .projects-photo{
     transform: scale(1.05);
 }
 
-.allProjects-photo {
+.projects-photo {
     transition: 0.5s all;
 }
 
-.allProjects-button {
+.projects-button {
     margin: auto;
 }
 
@@ -555,7 +562,7 @@ body {
     text-align: center;
 }
 
-.subcribe-bottomsubtitle {
+.subcribe-bottom-subtitle {
     margin-bottom: 30px;
     text-align: center;
 }
@@ -640,7 +647,7 @@ body {
 }
 
 .footer-small-subtitle:hover {
-    text-decoration: underline;
+    opacity: 0.75;
 }
 
 .footer-rights {
