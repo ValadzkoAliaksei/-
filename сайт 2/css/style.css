@@ -310,7 +310,7 @@ body {
     margin: auto;
 }
 
-/* Свойства для aboutUs */
+/* Свойства для about */
 .about {
     background: #f6f6f8;
     padding-top: 100px;
@@ -341,9 +341,9 @@ body {
 .about-photo {
     border-radius: 30px;
     width: 500px;
+    min-width: 250px;
     height: 400px;
     background: url(../img/aboutUs-photo.jpg) center;
-    min-width: 250px;
 }
 
 .about-bottom-row {
@@ -399,27 +399,30 @@ body {
 }
 
 .all-bottom-row {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 350px);
+    grid-gap: 30px;
     padding-bottom: 65px;
+    justify-content: space-between;
 }
 
 .all-column {
-    width: 350px;
     padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .all-photo {
     border-radius: 10px;
-    width: 350px;
     height: 300px;
 }
 
 .all-small-title {
     margin-top: 30px;
     margin-bottom: 30px;
+}
+.all-link {
+    margin: auto 0 0 0;
 }
 
 .all-span {
@@ -440,14 +443,12 @@ body {
 
 .projects-title {
     text-align: center;
+    padding: 0 190px;
 }
 
 .projects-subtitle {
-    width: 730px;
-    margin: auto;
     text-align: center;
-    padding-top: 50px;
-    padding-bottom: 70px;
+    padding: 50px 190px 70px 190px;
 }
 
 .projects-row {
@@ -499,12 +500,14 @@ body {
 
 .subcribe-title {
     text-align: center;
+    padding: 0 50px;
 }
 
 .subcribe-subtitle {
     text-align: center;
     margin-top: 30px;
     margin-bottom: 70px;
+    padding: 0 50px;
 }
 
 .subcribe-video {
