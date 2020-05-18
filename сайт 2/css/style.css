@@ -343,7 +343,7 @@ body {
     width: 500px;
     min-width: 250px;
     height: 400px;
-    background: url(../img/aboutUs-photo.jpg) center;
+    background: url(../img/about-photo.jpg) center;
 }
 
 .about-bottom-row {
@@ -352,6 +352,10 @@ body {
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-around;
+}
+
+.about-svg {
+    text-decoration: none;
 }
 
 .about-number {
@@ -400,7 +404,7 @@ body {
 
 .all-bottom-row {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 350px);
+    grid-template-columns: repeat(auto-fit, 340px);
     grid-gap: 30px;
     padding-bottom: 65px;
     justify-content: space-between;
@@ -465,6 +469,11 @@ body {
     overflow: hidden;
     border-radius: 10px;
     margin-bottom: 50px;
+    margin-right: 10px;
+}
+
+.projects-column:last-child {
+    margin-right: 0;
 }
 
 .projects-column:hover .projects-photo{
@@ -640,6 +649,11 @@ body {
 
 .footer-column {
     width: 242px;
+    margin-right: 10px;
+}
+
+.footer-column:last-child {
+    margin-right: 0;
 }
 
 .footer-small-subtitle {
