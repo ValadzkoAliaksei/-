@@ -11,8 +11,8 @@
 <body>
     <div class="container">
         <header class="header">
-            <nav>
-                <ul class="menu padding-site">
+            <nav class="header-nav padding-site">
+                <ul class="menu">
                     <li class="menu-list">
                         <a href="#" class="menu-link menu-link-active">Главная</a>
                     </li>
@@ -28,7 +28,16 @@
                     <li class="menu-list">
                         <a href="#" class="menu-link">Контакты</a>
                     </li>
+                    <div class="header-nav-close">
+                        <span class="header-nav-close-line"></span>
+                        <span class="header-nav-close-line"></span>
+                    </div>
                 </ul>
+                <div class="header-burger burger">
+                    <span class="burger-line burger-line-first"></span>
+                    <span class="burger-line burger-line-second"></span>
+                    <span class="burger-line burger-line-third"></span>
+                </div>
             </nav>
             <hr class="line">
         </header>
@@ -59,7 +68,7 @@
                         <a href="#">
                             <div class="services-icon-circle">
                                 <div class="services-icon-ellipse">
-                                    <img src="img/project.svg" alt="project">
+                                    <img src="img/project.svg" alt="project" class="services-img">
                                 </div>
                             </div>
                         </a>
@@ -76,7 +85,7 @@
                         <a href="#">
                             <div class="services-icon-circle">
                                 <div class="services-icon-ellipse">
-                                    <img src="img/project.svg" alt="project">
+                                    <img src="img/project.svg" alt="project" class="services-img">
                                 </div>
                             </div>
                         </a>
@@ -93,7 +102,7 @@
                         <a href="#">
                             <div class="services-icon-circle">
                                 <div class="services-icon-ellipse">
-                                    <img src="img/project.svg" alt="project">
+                                    <img src="img/project.svg" alt="project" class="services-img">
                                 </div>
                             </div>
                         </a>
@@ -134,56 +143,66 @@
                 <hr class="line">
                 <div class="about-bottom-row">
                     <div class="about-column">
-                        <a href="#" class="about-svg">
-                            <img src="img/web-programming.svg" alt="project">
-                        </a>
-                        <p class="about-number">
-                            125
-                        </p>
+                        <div class="about-mini-row">
+                            <a href="#" class="about-svg">
+                                <img src="img/web-programming.svg" alt="project" class="about-svg-img">
+                            </a>
+                            <p class="about-number">
+                                125
+                            </p>
+                        </div>
                         <p class="about-paragraph black-subtitle">
                             Our projects
                         </p>
                     </div>
                     <div class="about-column">
-                        <a href="#" class="about-svg">
-                            <img src="img/web-programming.svg" alt="project">
-                        </a>
-                        <p class="about-number">
-                            125
-                        </p>
+                        <div class="about-mini-row">
+                            <a href="#" class="about-svg">
+                                <img src="img/web-programming.svg" alt="project" class="about-svg-img">
+                            </a>
+                            <p class="about-number">
+                                125
+                            </p>
+                        </div>
                         <p class="about-paragraph black-subtitle">
                             Our projects
                         </p>
                     </div>
                     <div class="about-column">
-                        <a href="#" class="about-svg">
-                            <img src="img/web-programming.svg" alt="project">
-                        </a>
-                        <p class="about-number">
-                            125
-                        </p>
+                        <div class="about-mini-row">
+                            <a href="#" class="about-svg">
+                                <img src="img/web-programming.svg" alt="project" class="about-svg-img">
+                            </a>
+                            <p class="about-number">
+                                125
+                            </p>
+                        </div>
                         <p class="about-paragraph black-subtitle">
                             Our projects
                         </p>
                     </div>
                     <div class="about-column">
-                        <a href="#" class="about-svg">
-                            <img src="img/web-programming.svg" alt="project">
-                        </a>
-                        <p class="about-number">
-                            125
-                        </p>
+                        <div class="about-mini-row">
+                            <a href="#" class="about-svg">
+                                <img src="img/web-programming.svg" alt="project" class="about-svg-img">
+                            </a>
+                            <p class="about-number">
+                                125
+                            </p>
+                        </div>
                         <p class="about-paragraph black-subtitle">
                             Our projects
                         </p>
                     </div>
                     <div class="about-column">
-                        <a href="#" class="about-svg">
-                            <img src="img/web-programming.svg" alt="project">
-                        </a>
-                        <p class="about-number">
-                            125
-                        </p>
+                        <div class="about-mini-row">
+                            <a href="#" class="about-svg">
+                                <img src="img/web-programming.svg" alt="project" class="about-svg-img">
+                            </a>
+                            <p class="about-number">
+                                125
+                            </p>
+                        </div>
                         <p class="about-paragraph black-subtitle">
                             Our projects
                         </p>
@@ -194,7 +213,7 @@
                 <div class="all-color"></div>
                 <div class="all-top-row">
                     <h2 class="all-title white-title">
-                        Наши работы, на которых мы специализируемся
+                        Наши работы, на которых мы специализи&shy;руемся
                     </h2>
                     <p class="all-button button">
                         <a href="#" class="link">
@@ -307,7 +326,7 @@
                     </fieldset>
                 </form>
                 <p class="subcribe-small-subtitle small-subtitle">
-                    Мы не шлем спам, и передаем никому ваши данные.
+                    Мы не шлем спам, и не передаем никому ваши данные.
                 </p>
             </section>
         </main>
@@ -324,7 +343,7 @@
                         <img src="img/call.svg" alt="call"> &emsp;+8 777 555 66 99
                     </a>
                     <a href="#" class="footer-small-subtitle small-subtitle">
-                        <img src="img/placeholder.svg" alt="placeholder"> &emsp;Москва, Бульвар Ленина 33
+                        <img src="img/placeholder.svg" alt="placeholder">&emsp;Москва,&nbsp;Бульвар&nbsp;Ленина&nbsp;33
                     </a>
                 </div>
                 <div class="footer-column">
@@ -358,7 +377,7 @@
                         &rsaquo; &emsp;Проект “Восток”
                     </a>
                     <a href="#" target="_blank" class="footer-small-subtitle small-subtitle">
-                        &rsaquo; &emsp;ТЭЦ Калининграда
+                        &rsaquo; &emsp;ТЭЦ&nbsp;Калининграда
                     </a>
                 </div>
                 <div class="footer-column">
