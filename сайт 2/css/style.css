@@ -256,7 +256,8 @@ body {
 .intro {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/Background-intro.jpg) no-repeat center;
     background-size: cover;
-    min-height: 80vh;
+    max-height: 80vh;
+    min-height: 40vh;
     padding-top: 17vw;
     padding-bottom: 20px;
 }
@@ -275,13 +276,15 @@ body {
 
 .intro-button {
     margin: auto;
+    margin-bottom: 1vw;
 }
 
 /* Свойства для services */
 .services {
     padding-bottom: 5.5vw;
     padding-top: 5.7vw;
-    min-height: 50vh;
+    max-height: 80vh;
+    min-height: 30vh;
 }
 
 .services-title {
@@ -437,7 +440,8 @@ body {
 .all {
     padding-bottom: 4.4vw;
     padding-top: 5.2vw;
-    min-height: 50vh;
+    max-height: 130vh;
+    min-height: 30vh;
     position: relative;
 }
 
@@ -506,7 +510,8 @@ body {
 .projects {
     padding-top: 5.2vw;
     padding-bottom: 6.8vw;
-    min-height: 50vh;
+    min-height: 30vh;
+    max-height: 80vh;
     background: #F6F6F8;
 }
 
@@ -608,7 +613,7 @@ body {
     line-height: 5.2vw;
     text-align: right;
     padding-right: 1.5vw;
-    transition: 0.7s all;
+    transition: 0.5s all;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -663,29 +668,26 @@ body {
 .subcribe-email {
     border: 1px solid #F2F2F2;
     box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
+    border-top-left-radius: 1.2vw;
+    border-bottom-left-radius: 1.2vw;
     width: 15.5vw;
-    min-width: 175px;
-    height: 45px;
-    padding-left: 33px;
-    font-size: 13px;
+    height: 2.4vw;
+    padding-left: 1.6vw;
+    font-size: 0.7vw;
     color: #999999;
 }
 
 .subcribe-submit {
     background: #4985FF;
     box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
-    border-radius: 0px 30px 30px 0px;
+    border-radius: 0 1.2vw 1.2vw 0;
     width: 10vw;
-    min-width: 125px;
-    height: 45px;
+    height: 2.4vw;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 0.8vw;
     text-align: center;
     color: #FFFFFF;
-    margin-left: -10px;
+    margin-left: -0.5vw;
 }
 
 .subcribe-submit:hover {
@@ -701,9 +703,10 @@ body {
 
 /* Свойства для footer */
 .footer {
-    padding-top: 70px;
-    padding-bottom: 30px;
-    min-height: 30vh;
+    padding-top: 3.6vw;
+    padding-bottom: 1.5vw;
+    max-height: 50vh;
+    min-height: 20vh;
     background: #F6F6F8;
 }
 
@@ -713,12 +716,12 @@ body {
     align-items: flex-start;
     justify-content: space-between;
     flex-direction: row;
-    margin-bottom: 70px;
+    margin-bottom: 3.6vw;
 }
 
 .footer-column {
-    width: 242px;
-    margin-right: 10px;
+    width: 12.6vw;
+    margin-right: 0.5vw;
 }
 
 .footer-column:last-child {
@@ -728,16 +731,20 @@ body {
 .footer-small-subtitle {
     display: block;
     text-decoration: none;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 1.5vw;
+    margin-bottom: 1.5vw;
 }
 
 .footer-small-subtitle:hover {
     opacity: 0.75;
 }
+.footer-img {
+    width: 0.8vw;
+    height: 0.8vw;
+}
 
 .footer-rights {
-    margin-top: 30px;
+    margin-top: 1.5vw;
     text-align: center;
 }
 
@@ -745,7 +752,7 @@ body {
 @media screen and (max-width: 767px) {
     .header-burger {
         display: block;
-        margin-top: 50px;
+        margin-top: 20px;
     }
 
     .menu {
@@ -756,7 +763,7 @@ body {
         left: 0;
         background-color: #504DC2;
         z-index: 9;
-        padding: 50px 75px;
+        padding: 20px 75px;
         display: block;
         transform: translateX(100%);
         transition: 0.5s linear;
@@ -769,6 +776,7 @@ body {
     .menu-list {
         width: 100%;
         margin-right: 0;
+        margin-top: 30px;
     }
 
     .menu-link {
