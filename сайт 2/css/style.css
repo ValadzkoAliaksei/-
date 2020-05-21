@@ -560,7 +560,8 @@ body {
     padding-top: 3.6vw;
     padding-bottom: 4.4vw;
     position: relative;
-    min-height: 50vh;
+    min-height: 30vh;
+    max-height: 100vh;
 }
 
 .subcribe-color {
@@ -569,7 +570,7 @@ body {
     left: 0;
     background:  linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), url(../img/Background-subcribe.jpg) no-repeat center;
     background-size: cover;
-    height: 55%;
+    height: 28vw;
     width: 100%;
     z-index: -1;
 }
@@ -626,6 +627,7 @@ body {
     background: url(../img/play-button.svg) no-repeat center center;
     color: transparent;
     width: 5.2vw;
+    border-radius: 2.6vw;
     background-size: 80%;
 }
 
@@ -633,6 +635,7 @@ body {
     background: url(../img/play-button.svg) no-repeat center center;
     color: transparent;
     width: 5.2vw;
+    border-radius: 2.6vw;
     background-size: 100%;
     border: none;
 }
@@ -688,6 +691,8 @@ body {
     text-align: center;
     color: #FFFFFF;
     margin-left: -0.5vw;
+    border: none;
+    outline: none;
 }
 
 .subcribe-submit:hover {
@@ -750,9 +755,12 @@ body {
 
 /* Свойства для Media */
 @media screen and (max-width: 767px) {
+
+    /* Свойства для burger-menu */
     .header-burger {
         display: block;
         margin-top: 20px;
+        margin-right: 20px;
     }
 
     .menu {
@@ -763,7 +771,7 @@ body {
         left: 0;
         background-color: #504DC2;
         z-index: 9;
-        padding: 20px 75px;
+        padding: 20px 50px;
         display: block;
         transform: translateX(100%);
         transition: 0.5s linear;
@@ -776,11 +784,11 @@ body {
     .menu-list {
         width: 100%;
         margin-right: 0;
-        margin-top: 30px;
+        margin-top: 40px;
     }
 
     .menu-link {
-        font-size: 42px;
+        font-size: 30px;
         padding: 0;
     }
 
@@ -788,8 +796,8 @@ body {
         width: 40px;
         height: 40px;
         position: absolute;
-        top: 50px;
-        right: 100px;
+        top: 30px;
+        right: 30px;
         z-index: 10;
     }
 
@@ -809,5 +817,11 @@ body {
 
     .header-nav-close-line:last-child {
         transform: translateY(-50%) rotate(-45deg);
+    }
+
+    /* Свойства для body */
+    .padding-site {
+        padding-left: 2vw;
+        padding-right: 2vw;
     }
 }
