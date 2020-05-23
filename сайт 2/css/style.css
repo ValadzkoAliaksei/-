@@ -582,9 +582,7 @@ body {
 
 .subcribe-subtitle {
     text-align: center;
-    margin-top: 1.5vw;
-    margin-bottom: 3.6vw;
-    padding: 0 2.6vw;
+    padding: 1.5vw 2.6vw 3.6vw 2.6vw;
 }
 
 .subcribe-video {
@@ -641,18 +639,18 @@ body {
 }
 
 .subcribe-small-title {
-    margin-top: 4.4vw;
-    margin-bottom: 1vw;
+    padding-top: 4.4vw;
+    padding-bottom: 1vw;
     text-align: center;
 }
 
 .subcribe-bottom-subtitle {
-    margin-bottom: 1.5vw;
+    padding-bottom: 1.5vw;
     text-align: center;
 }
 
 .subcribe-small-subtitle {
-    margin-top: 1.8vw;
+    padding-top: 1.8vw;
     text-align: center;
 }
 
@@ -690,7 +688,7 @@ body {
     font-size: 0.8vw;
     text-align: center;
     color: #FFFFFF;
-    margin-left: -0.5vw;
+    margin-left: -0.6vw;
     border: none;
     outline: none;
 }
@@ -821,8 +819,8 @@ body {
 
     /* Общие свойства */
     .padding-site {
-        padding-left: 2vw;
-        padding-right: 2vw;
+        padding-left: 4vw;
+        padding-right: 4vw;
     }
     
     .white-big-title {
@@ -973,5 +971,213 @@ body {
         width: 100%;
         height: 250px;
         border-radius: 30px;
+    }
+    .about-bottom-row {
+        margin-top: 20px;
+    }
+
+    .about-column {
+        width: 50%;
+        justify-content: space-around;
+        padding-bottom: 16px;
+    }
+
+    .about-svg-img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .about-number {
+        font-size: 30px;
+        line-height: normal;
+        padding-left: 20px;
+    }
+
+    .all {
+        height: auto;
+        max-height: none;
+        min-height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .all-color {
+        height: 20%;
+    }
+
+    .all-top-row {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    .all-title {
+        width: 100%;
+    }
+
+    .all-bottom-row {
+        padding-bottom: 20px;
+    }
+
+    .all-column {
+        grid-column: span 3;
+        padding-bottom: 40px;
+    }
+
+    .all-photo {
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .all-small-title {
+        margin: 20px 0;
+    }
+
+    .all-subtitle {
+        margin-bottom: 20px;
+    }
+
+    .all-link {
+        font-size: 16px;
+    }
+
+    .projects {
+        height: auto;
+        max-height: none;
+        min-height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .projects-title {
+        padding: 0;
+    }
+
+    .projects-subtitle {
+        padding: 20px 0;
+    }
+
+    .projects-column {
+        grid-column: span 4;
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    .projects-photo {
+        width: 100%;
+        height: auto;
+    }
+
+    .projects-button {
+        margin-bottom: 20px;
+    }
+
+    .subcribe {
+        height: auto;
+        max-height: none;
+        min-height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .subcribe-color {
+        height: 50%;
+    }
+
+    .subcribe-title {
+        padding: 0;
+    }
+
+    .subcribe-subtitle {
+        padding: 20px 0 30px 0;
+    }
+
+    .subcribe-video {
+        margin-bottom: 30px;
+    }
+
+    .subcribe-video-img {
+        height: 300px;
+    }
+
+    .subcribe-link {
+        width: 210px;
+        height: 70px;
+        border-radius: 35px;
+        line-height: 70px;
+        background-size: 25%;
+        background-position-x: 6%;
+    }
+
+    .subcribe-link:hover {
+        width: 70px;
+        border-radius: 35px;
+    }
+
+    .subcribe-link:active {
+        width: 70px;
+    }
+
+    .subcribe-small-title {
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    
+    .subcribe-bottom-subtitle {
+        padding-bottom: 20px;
+    }
+    .subcribe-fieldset {
+        width: 100%;
+    }
+    .subcribe-email {
+        width: 66%;
+        height: 44px;
+        border-top-left-radius: 22px;
+        border-bottom-left-radius: 22px;
+        font-size: 14px;
+        padding-left: 30px;
+    }
+
+    .subcribe-submit {
+        width: 33%;
+        height: 44px;
+        border-top-right-radius: 22px;
+        border-bottom-right-radius: 22px;
+        font-size: 14px;
+        margin-left: -10px;
+    }
+
+    .subcribe-small-subtitle {
+        padding: 20px 0;
+    }
+
+    .footer {
+        height: auto;
+        max-height: none;
+        min-height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .footer-row {
+        margin-bottom: 20px;
+    }
+
+        .footer-column {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .footer-img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .footer-small-subtitle {
+        margin: 10px 0;
+    }
+
+    .footer-rights {
+        margin-top: 20px;
     }
 }
