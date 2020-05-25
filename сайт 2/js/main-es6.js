@@ -15,13 +15,20 @@
     const burgerItem = document.querySelector('.burger');
     const menuItem = document.querySelector('.menu');
     const menuCloseItem = document.querySelector('.header-nav-close');
+    const menuLinks = document.querySelectorAll('.menu-link');
     burgerItem.addEventListener('click', () => {
         menuItem.classList.add('menu-active');
     });
     menuCloseItem.addEventListener('click', () => {
         menuItem.classList.remove('menu-active');
     });
-
+    if (window.innerWidth <= 767) {
+        for (let i = 0; i < menuLinks.length; i += 1) {
+            menuLinks[i].addEventListener('click', () => {
+                menuItem.classList.remove('menu-active');
+             });
+        }
+    }
 }());
 
 // Scroll to anchors
