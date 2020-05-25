@@ -550,7 +550,7 @@ body {
     display: -ms-grid;
     display: grid;
     grid-template-columns: repeat(auto-fit, 18.2vw);
-    grid-column-gap: 1.5vw;
+    column-gap: 1.5vw;
     padding-bottom: 3.4vw;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
